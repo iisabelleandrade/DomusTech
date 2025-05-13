@@ -54,5 +54,7 @@ function App() {
     </div>
   );
 }
-
+document.getElementById("modoEscuroBtn").addEventListener("click", function () {
+    document.body.classList.toggle("dark-mode");
+});
 export default App;
