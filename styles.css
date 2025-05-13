@@ -5,58 +5,38 @@ body {
 .banner {
     background: linear-gradient(to right, #0077b6, #00a6fb);
     border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.banner:hover {
+    transform: scale(1.02);
 }
 
 .card {
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
     transform: scale(1.05);
-}
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.light-mode {
-  background-color: #f8f9fa;
-  color: #343a40;
+.btn-primary {
+    background-color: #0077b6;
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #005f8a;
 }
 
 .dark-mode {
-  background-color: #343a40;
-  color: #f8f9fa;
+    background-color: #343a40;
+    color: #f8f9fa;
 }
 
-header {
-  padding: 20px;
-  background-color: #0077b6;
-  color: white;
-}
-
-button {
-  padding: 10px;
-  margin: 10px;
-  cursor: pointer;
-  border: none;
-  background-color: #00a6fb;
-  color: white;
-  font-size: 16px;
-}
-
-.produtos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.produto {
-  border: 1px solid #ddd;
-  padding: 20px;
-  width: 200px;
-}
-
-.produto button {
-  background-color: #0077b6;
+.light-mode {
+    background-color: #f8f9fa;
+    color: #343a40;
 }
