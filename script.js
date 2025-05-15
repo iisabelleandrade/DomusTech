@@ -1,12 +1,14 @@
-document.getElementById("loginBtn").addEventListener("click", function() {
-    let nome = prompt("Digite seu nome:");
-    if (nome) {
-        document.getElementById("clienteNome").textContent = nome;
-        document.getElementById("perfil").classList.remove("hidden");
-        this.classList.add("hidden");
-    }
-});
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
 
-document.getElementById("categoriasBtn").addEventListener("click", function() {
-    document.getElementById("categorias").classList.toggle("hidden");
+  navLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  });
 });
