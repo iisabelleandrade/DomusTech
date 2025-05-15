@@ -1,38 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DomusTech - Automação Residencial</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DomusTech - Automação e Gestão de Dispositivos</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <h1>DomusTech</h1>
-        <nav>
-            <button id="loginBtn">Login</button>
-            <div id="perfil" class="hidden">
-                <span id="clienteNome">Usuário</span>
-                <button id="categoriasBtn">Categorias</button>
-            </div>
-        </nav>
-    </header>
+  <header>
+    <h1>DomusTech</h1>
+  </header>
+  <nav>
+    <a href="#dispositivos">Gerencie seus dispositivos</a>
+    <a href="#automacao">Automação residencial/empresarial</a>
+    <a href="#catalogo">Catálogo de produtos</a>
+  </nav>
 
-    <main>
-        <section id="categorias" class="hidden">
-            <h2>Categorias</h2>
-            <ul>
-                <li><a href="#">Gerencie seus dispositivos</a></li>
-                <li><a href="#">Automação residencial</a></li>
-                <li><a href="#">Segurança</a></li>
-            </ul>
-        </section>
-    </main>
+  <section id="dispositivos" aria-label="Gerencie seus dispositivos">
+    <h2>Gerencie seus dispositivos</h2>
+    <p>
+      Controle e monitore todos os seus dispositivos conectados de forma simples e eficiente.
+      Desde smartphones até dispositivos de automação, tudo ao alcance do seu clique.
+    </p>
+    <p>
+      Tenha o poder de otimização e segurança em suas mãos, com ferramentas intuitivas que facilitam o dia a dia.
+    </p>
+  </section>
 
-    <footer>
-        <p>&copy; 2025 DomusTech - Automação Inteligente</p>
-    </footer>
+  <section id="automacao" aria-label="Automação residencial e empresarial">
+    <h2>Automação residencial/empresarial</h2>
+    <p>
+      Transforme seu lar ou empresa com tecnologia de automação inteligente que proporciona conforto, economia e segurança.
+    </p>
+    <p>
+      Controle de iluminação, climatização, segurança, acesso remoto e muito mais com soluções personalizadas para cada necessidade.
+    </p>
+  </section>
 
-    <script src="script.js"></script>
+  <section id="catalogo" aria-label="Catálogo de produtos de automação">
+    <h2>Catálogo de produtos</h2>
+    <div class="catalog" role="list">
+      <article class="product-card" role="listitem" tabindex="0">
+        <div class="product-image" aria-label="Imagem da Câmera IP HD">📷</div>
+        <div class="product-details">
+          <h3 class="product-name">Câmera IP HD</h3>
+          <p class="product-desc">Monitoramento por vídeo com alta resolução e acesso remoto via app mobile.</p>
+          <div class="product-price">R$ 399,00</div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0">
+        <div class="product-image" aria-label="Imagem do Sensor de Movimento">🚶‍♂️</div>
+        <div class="product-details">
+          <h3 class="product-name">Sensor de Movimento</h3>
+          <p class="product-desc">Detecção de movimento para alertas e automação de iluminação ou segurança.</p>
+          <div class="product-price">R$ 159,00</div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0">
+        <div class="product-image" aria-label="Imagem do Controle Inteligente de Luz">💡</div>
+        <div class="product-details">
+          <h3 class="product-name">Controle Inteligente de Luz</h3>
+          <p class="product-desc">Controle remoto e agendamento para suas lâmpadas, via smartphone ou voz.</p>
+          <div class="product-price">R$ 220,00</div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0">
+        <div class="product-image" aria-label="Imagem do Termostato Inteligente">🌡️</div>
+        <div class="product-details">
+          <h3 class="product-name">Termostato Inteligente</h3>
+          <p class="product-desc">Regule a temperatura do ambiente com programação e controle remoto.</p>
+          <div class="product-price">R$ 480,00</div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0">
+        <div class="product-image" aria-label="Imagem do Fechadura Digital">🔒</div>
+        <div class="product-details">
+          <h3 class="product-name">Fechadura Digital</h3>
+          <p class="product-desc">Acesso seguro sem chave, com códigos, biometria ou app dedicado.</p>
+          <div class="product-price">R$ 780,00</div>
+        </div>
+      </article>
+
+      <article class="product-card" role="listitem" tabindex="0">
+        <div class="product-image" aria-label="Imagem do Assistente de Voz">🗣️</div>
+        <div class="product-details">
+          <h3 class="product-name">Assistente de Voz</h3>
+          <p class="product-desc">Controle sua automação residencial com comandos de voz simples e eficientes.</p>
+          <div class="product-price">R$ 340,00</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 DomusTech. Todos os direitos reservados.
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
